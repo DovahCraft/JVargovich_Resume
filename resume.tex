@@ -1,0 +1,139 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+
+
+%Template modified by Author:
+%Joseph Vargovich 8/4/2020
+
+%Features removed/added
+%Objective
+%Blue highlighted links for GH, Email, and LinkedIn
+%Consistent Section Headers (no half colored headers)
+%Conistent bolding of name in header. 
+%Other minor formatting changes, such as spacing.
+%Quote in header.
+
+%Credit goes to author below, the original author of the template. 
+
+
+% Awesome CV LaTeX Template for CV/Resume
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Author:
+% Claud D. Park <posquit0.bj@gmail.com>
+% http://www.posquit0.com
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+
+
+
+%-------------------------------------------------------------------------------
+% CONFIGURATIONS
+%-------------------------------------------------------------------------------
+% A4 paper size by default, use 'letterpaper' for US letter
+\documentclass[11pt, a4paper]{awesome-cv}
+
+% Configure page margins with geometry
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+
+% Specify the location of the included fonts
+\fontdir[fonts/]
+
+% Color for highlights
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+%\colorlet{awesome}{awesome-skyblue}
+% Uncomment if you would like to specify your own color
+\definecolor{awesome}{HTML}{165f99}
+
+% Colors for text
+% Uncomment if you would like to specify your own color
+% \definecolor{darktext}{HTML}{414141}
+% \definecolor{text}{HTML}{333333}
+% \definecolor{graytext}{HTML}{5D5D5D}
+% \definecolor{lighttext}{HTML}{999999}
+
+% Set false if you don't want to highlight section with awesome color
+\setbool{acvSectionColorHighlight}{false}
+
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+
+%Highlighting links in the resume text
+ \definecolor{Teal}{RGB}{0,128,128}
+ \definecolor{linkblue}{RGB}{0,102,204}
+ \usepackage{hyperref}
+ \hypersetup{colorlinks,breaklinks,
+             urlcolor=linkblue,
+             linkcolor=linkblue}
+
+%-------------------------------------------------------------------------------
+%	PERSONAL INFORMATION
+%	Comment any of the lines below if they are not required
+%-------------------------------------------------------------------------------
+% Available options: circle|rectangle,edge/noedge,left/right
+ %\photo[rectangle,edge,right]{profile}
+\name{\textbf{Joseph Vargovich}}{}
+\position{Machine Learning Research Assistant{\enskip\cdotp\enskip}Computer Science Student}
+%\address{11346 E. Ramblewood Ave. Mesa, Arizona 85212}
+
+\mobile{480-721-1241}
+\email{jrv233@nau.edu}
+%\homepage{www.posquit0.com}
+\github{DovahCraft}
+\linkedin{josephvargovich}
+% \gitlab{gitlab-id}
+% \stackoverflow{SO-id}{SO-name}
+% \twitter{@twit}
+% \skype{skype-id}
+% \reddit{reddit-id}
+% \medium{madium-id}
+% \googlescholar{googlescholar-id}{name-to-display}
+%% \firstname and \lastname will be used
+% \googlescholar{googlescholar-id}{}
+% \extrainfo{extra informations}
+
+
+%\quote{``Be disciplined, not motivated."}
+
+
+
+
+%-------------------------------------------------------------------------------
+\begin{document}
+
+% Print the header with above personal informations
+% Give optional argument to change alignment(C: center, L: left, R: right)
+\makecvheader[C]
+
+% Print the footer with 3 arguments(<left>, <center>, <right>)
+% Leave any of these blank if they are not needed
+\makecvfooter
+  {\today}
+  {Joseph Vargovich~~~·~~~Resume}
+  {\thepage}
+
+
+%-------------------------------------------------------------------------------
+%	CV/RESUME CONTENT
+%	Each section is imported separately, open each file in turn to modify content
+%-------------------------------------------------------------------------------
+%Remove a bit of the space at top if needed
+\vskip .05cm 
+\input{resume/objective.tex}
+\input{resume/education.tex}
+\input{resume/experience.tex}
+%\input{resume/honors.tex}
+%\input{resume/presentation.tex}
+\input{resume/projects.tex}
+
+
+
+
+%-------------------------------------------------------------------------------
+\end{document}
