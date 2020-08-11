@@ -1,4 +1,4 @@
-Modfied version of AwesomeCV by posquito.
+<h1>Modfied version of AwesomeCV by posquito.</h1>
 
 Template modified by Author:
 Joseph Vargovich 8/4/2020
